@@ -26,12 +26,13 @@ post '/posts' do
     @post = Post.create(params[:post])
     @user.posts << @post
 
-    modify_tags(params).each do |tag|
-      if Tag.find_by_tag(tag)
-        @post.tags << Tag.find_by_tag(tag)
-      else
-      @post.tags << Tag.create(:tag => tag)
-      end
+    modify_tags(params).uniq.each do |tag|
+      @post.tags << Tag.find_or_create_by_tag(tag)
+      # if Tag.find_by_tag(tag)
+      #   @post.tags << Tag.find_by_tag(tag)
+      # else
+      # @post.tags << Tag.create(:tag => tag)
+      # end
     end 
   end
   redirect '/posts'

@@ -1,7 +1,7 @@
 <form action='/logout' method="post">
 <input type="submit" value="Peace out yo!">
 </form>
-<h1><%=@user.first_name%>'s Blog!</h1>
+<h1 id="user_head"><%=@user.first_name%>'s Blog!</h1>
 
 <% unless @user.posts.empty? %>
 <% @user.posts.each do |post| %>
@@ -19,4 +19,4 @@
 <% end %>
 </ul>
 
-<div><a href="/new">Create a new Post!!!</a></div>
+<div id="newpost"><a id="newbutton" href="/new">Create a new Post!!!</a></div>

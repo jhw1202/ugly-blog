@@ -8,10 +8,36 @@
     text-align: left;
   }
 
+#user_head{
+  text-align: center;
+  color: #333333;
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
 .post_container{
     margin: 20px auto;
     width: 600px;
     padding: 0px 20px 20px 20px;
+}
+
+#newpost{
+  text-align: center;
+  font-size: 5em;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#852585;
+  font-family:arial;
+    background-color:#852585;
+
+}
+
+#newbutton{
+    color:white;
+
 }
 
 #title{
@@ -25,6 +51,10 @@ ul li {
 
 a:hover {
   text-decoration: underline;
+}
+
+#back{
+  margin-bottom: 50px;
 }
 
 a{
