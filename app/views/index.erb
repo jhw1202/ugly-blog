@@ -2,3 +2,20 @@
 
   <h1 id="home_title">Welcome to Sinatra!</h1>
 
+<h2>Sign up for a new account </h2>
+<form id='signup-form' method='post' action='/signup'>
+      <input type='text' name='user[first_name]' placeholder='First Name'><br>
+      <input type='text' name='user[last_name]' placeholder='Last Name'> <br> 
+      <input type='text' name='user[email]' placeholder='Email'><br>
+      <input type='text' name='user[hashed_password]' placeholder='Password'><br>
+      <input type='submit' value='Sign up!'>
+    </form>
+
+
+<h2>Already a user?</h3>
+<h3>Sign in to your account</h3>
+<form id='login-form' method='post' action='/login'>
+      <input type='text' name='email' placeholder='Email'><br>    
+      <input type='text' name='password' placeholder='Password'><br>
+      <input type='submit' value='Submit'>
+    </form>

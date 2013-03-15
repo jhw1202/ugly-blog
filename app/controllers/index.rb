@@ -31,3 +31,10 @@ get '/tag/:tag_id' do
   erb :tags
 end
 
+post '/signup' do
+  @user = User.create(params[:user])
+end
+
+post '/login' do
+
+end
