@@ -12,3 +12,13 @@
   <% end %>
   
 </div>
+
+
+<div id="author">
+  <% author = User.find(@post.user_id) %>
+  <% if session[:user_id] != author.id %>
+  Author: <a href="/users/<%=author.id%>/posts"><%= author.first_name %> <%= author.last_name%></a>
+  <%end%>
+</div>
+<a href="/">Go back home because YOLOSWAG</a>
+

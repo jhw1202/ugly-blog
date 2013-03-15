@@ -20,6 +20,14 @@
 }
 
 ul li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a{
   text-decoration: none;
 }
 
@@ -42,12 +50,14 @@ ul li {
   display:inline;
 }
 
-
+#author{
+  text-align: center;
+}
 
 
 #home_title{
-  width:500px
-  height: 300px;
-  background-image:url('http://placekitten.com/300/300');
+  width:600px;
+  height: 200px;
+  background-image:url('http://placekitten.com/600/200');
   color: orange;
 }

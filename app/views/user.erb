@@ -1,0 +1,22 @@
+<form action='/logout' method="post">
+<input type="submit" value="Peace out yo!">
+</form>
+<h1><%=@user.first_name%>'s Blog!</h1>
+
+<% unless @user.posts.empty? %>
+<% @user.posts.each do |post| %>
+<a href="/post/<%=post.id %>"><h3 id="title"><%= post.title %></h3></a>
+<div id="postbody">
+  <%= post.body %>
+</div>
+<div>
+  Tags:<% post.tags.each do |tag| %>
+  <div id="tag"><img src="http://0.tqn.com/d/graphicssoft/1/0/4/M/1/Fall-Leaves-Tag1.png" id="tagimage">
+  <a href="/tag/<%=tag.id %>"><%= tag.tag %></a></div>
+  <% end %>
+</div>
+<% end %>
+<% end %>
+</ul>
+
+<div><a href="/new">Create a new Post!!!</a></div>
