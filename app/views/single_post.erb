@@ -1,16 +1,16 @@
-<div class='post_container'>
-<h1><div id="title"><%= @post.title %></div></h1>
+
+<div id="title"><%= @post.title %></div>
 
 
 <div id="postbody">
   <%= @post.body %>
 </div>
 
+<div class="tags">
   Tags:<% @post.tags.each do |tag| %>
   <div id="tag"><img src="http://0.tqn.com/d/graphicssoft/1/0/4/M/1/Fall-Leaves-Tag1.png" id="tagimage">
   <a href="/tag/<%=tag.id %>"><%= tag.tag %></a></div>
   <% end %>
-  
 </div>
 
 
@@ -21,5 +21,7 @@
   <%end%>
 </div>
 <div id="back"><a href="/users">Back</a></div>
+<div id="newpost"><a id="newbutton" href="/post/<%=params[:post_id]%>/edit">Edit this post...although YOLOSWAG so editing is frowned upon</a></div>
+
 <a href="/">Go back home because YOLOSWAG</a>
 

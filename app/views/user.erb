@@ -1,6 +1,8 @@
 <form action='/logout' method="post">
-<input type="submit" value="Peace out yo!">
+<input class="newbutton" type="submit" value="Peace out yo!">
 </form>
+
+
 <h1 id="user_head"><%=@user.first_name%>'s Blog!</h1>
 
 <% unless @user.posts.empty? %>

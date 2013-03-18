@@ -1,12 +1,24 @@
   .container {
     margin: 20px auto;
-    width: 600px;
+    width: 800px;
     padding: 0px 20px 20px 20px;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
   }
-  th {
-    text-align: left;
-  }
+
+th {
+  text-align: left;
+}
+
+div.tags{
+  width: 600px;
+}
+
+li.error{
+  color: red;
+  font-family: comic;
+  list-style: none;
+  text-align: left;
+}
 
 #user_head{
   text-align: center;
@@ -16,13 +28,11 @@
 
 .post_container{
     margin: 20px auto;
-    width: 600px;
-    padding: 0px 20px 20px 20px;
+    width: 1000px;
 }
 
 #newpost{
-  text-align: center;
-  font-size: 5em;
+  font-size: 2em;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-border-radius:6px;
@@ -31,21 +41,21 @@
   display:inline-block;
   color:#852585;
   font-family:arial;
-    background-color:#852585;
-
+  background-color:#852585;
+  padding: 5px;
 }
 
 #newbutton{
     color:white;
-
 }
 
 #title{
-  font-family: Zapf Chancery, cursive;
+  font-family: sans-serif;
   
 }
 
-ul li {
+
+.taglist {
   list-style: none;
 }
 
@@ -68,16 +78,21 @@ a{
 
 #title{
   text-align: center;
+  font-size: 5em;
+  border-bottom: 1px solid orange;
 }
 
 #postbody{
   text-align: center;
-  margin: 50px;
+  margin: 25px;
+  font-family: serif;
+  font-size: 2em;
 }
 
 #tag{
   text-align: center;
   display:inline;
+  font-size: 1em;
 }
 
 #author{
